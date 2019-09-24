@@ -1,0 +1,240 @@
+﻿  verifySignedfile.cpp
+  md5Dlgs.cpp
+  sha-256.cpp
+  AboutDlg.cpp
+  ansiCharPanel.cpp
+  AutoCompletion.cpp
+  asciiListView.cpp
+  documentSnapshot.cpp
+  BabyGrid.cpp
+  BabyGridWrapper.cpp
+  Buffer.cpp
+  CharDistribution.cpp
+  clipboardHistoryPanel.cpp
+  ColourPicker.cpp
+  ColourPopup.cpp
+  columnEditor.cpp
+  Common.cpp
+  ContextMenu.cpp
+  pluginsAdmin.cpp
+  ControlsTab.cpp
+  DockingCont.cpp
+  DockingManager.cpp
+  DockingSplitter.cpp
+  DocTabView.cpp
+  documentMap.cpp
+  EncodingMapper.cpp
+  FileDialog.cpp
+  FindCharsInRange.cpp
+  FindReplaceDlg.cpp
+  FunctionCallTip.cpp
+  functionListPanel.cpp
+  functionParser.cpp
+  GoToLineDlg.cpp
+  Gripper.cpp
+  IDAllocator.cpp
+  ImageListSet.cpp
+  JpCntx.cpp
+  LangBulgarianModel.cpp
+  LangCyrillicModel.cpp
+  LangGreekModel.cpp
+  LangHebrewModel.cpp
+  LangHungarianModel.cpp
+  LangThaiModel.cpp
+  lastRecentFileList.cpp
+  lesDlgs.cpp
+  ListView.cpp
+  localization.cpp
+  MiniDumper.cpp
+  Notepad_plus.cpp
+  Notepad_plus_Window.cpp
+  NppBigSwitch.cpp
+  NppCommands.cpp
+  NppIO.cpp
+  NppNotification.cpp
+  nsBig5Prober.cpp
+  nsCharSetProber.cpp
+  nsEscCharsetProber.cpp
+  nsEscSM.cpp
+  nsEUCJPProber.cpp
+  nsEUCKRProber.cpp
+  nsEUCTWProber.cpp
+  nsGB2312Prober.cpp
+  nsHebrewProber.cpp
+  nsLatin1Prober.cpp
+  nsMBCSGroupProber.cpp
+  nsMBCSSM.cpp
+  nsSBCharSetProber.cpp
+  nsSBCSGroupProber.cpp
+  nsSJISProber.cpp
+  nsUniversalDetector.cpp
+  nsUTF8Prober.cpp
+  Parameters.cpp
+  PluginsManager.cpp
+  preferenceDlg.cpp
+  Printer.cpp
+  Processus.cpp
+  ProjectPanel.cpp
+  regExtDlg.cpp
+  RunDlg.cpp
+  RunMacroDlg.cpp
+  ScintillaCtrls.cpp
+  ScintillaEditView.cpp
+  shortcut.cpp
+  ShortcutMapper.cpp
+  SizeableDlg.cpp
+  SmartHighlighter.cpp
+  Splitter.cpp
+  SplitterContainer.cpp
+  StaticDialog.cpp
+  StatusBar.cpp
+  TabBar.cpp
+  TaskList.cpp
+  TaskListDlg.cpp
+  tinystr.cpp
+  tinystrA.cpp
+  tinyxml.cpp
+  tinyxmlA.cpp
+  tinyxmlerror.cpp
+  tinyxmlerrorA.cpp
+  tinyxmlparser.cpp
+  tinyxmlparserA.cpp
+  ToolBar.cpp
+  ToolTip.cpp
+  trayIconControler.cpp
+  TreeView.cpp
+  uchardet.cpp
+  UniConversion.cpp
+  URLCtrl.cpp
+  UserDefineDialog.cpp
+  Utf8_16.cpp
+  VerticalFileSwitcher.cpp
+  VerticalFileSwitcherListView.cpp
+  Win32Exception.cpp
+  WindowsDlg.cpp
+  winmain.cpp
+  WinMgr.cpp
+  WinRect.cpp
+  WordStyleDlg.cpp
+  xmlMatchedTagsHighlighter.cpp
+  fileBrowser.cpp
+  ReadDirectoryChanges.cpp
+  ReadDirectoryChangesPrivate.cpp
+  
+  Searching libraries
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comctl32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shlwapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shell32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Oleacc.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Dbghelp.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Version.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Crypt32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\wintrust.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Sensapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\kernel32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\user32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\gdi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\winspool.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comdlg32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\advapi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\ole32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\oleaut32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\uuid.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbc32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbccp32.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libcpmtd.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\LIBCMTD.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\OLDNAMES.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libconcrtd.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libvcruntimed.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\ucrt\x64\libucrtd.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comctl32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shlwapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shell32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Oleacc.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Dbghelp.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Version.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Crypt32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\wintrust.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Sensapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\kernel32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\user32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\gdi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\winspool.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comdlg32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\advapi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\ole32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\oleaut32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\uuid.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbc32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbccp32.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libcpmtd.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\LIBCMTD.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\OLDNAMES.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libconcrtd.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libvcruntimed.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\ucrt\x64\libucrtd.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comctl32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shlwapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shell32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Oleacc.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Dbghelp.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Version.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Crypt32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\wintrust.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Sensapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\kernel32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\user32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\gdi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\winspool.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comdlg32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\advapi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\ole32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\oleaut32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\uuid.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbc32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbccp32.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libcpmtd.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\LIBCMTD.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\OLDNAMES.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libconcrtd.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libvcruntimed.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\ucrt\x64\libucrtd.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comctl32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shlwapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shell32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Oleacc.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Dbghelp.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Version.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Crypt32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\wintrust.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Sensapi.lib:
+  
+  Finished searching libraries
+  
+  Searching libraries
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comctl32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shlwapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\shell32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Oleacc.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Dbghelp.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Version.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Crypt32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\wintrust.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\Sensapi.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\kernel32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\user32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\gdi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\winspool.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\comdlg32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\advapi32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\ole32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\oleaut32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\uuid.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbc32.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\um\x64\odbccp32.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\libcpmtd.lib:
+      Searching C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\lib\x64\LIBCMTD.lib:
+  
+  Finished searching libraries
+  notepadPlus.vcxproj -> C:\notepad git\PowerEditor\visual.net\x64\Unicode Debug\Notepad++.exe
