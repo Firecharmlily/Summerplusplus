@@ -1,5 +1,7 @@
 Summer++ team members: Julian, Lilly, Nandith, and Erika
 
+![SUMMER](/summer.png)
+
 
 What is Notepad++ ?
 ===================
