@@ -1,3 +1,6 @@
+Summer++ team members: Julian, Lilly, Nandith, and Erika
+
+
 What is Notepad++ ?
 ===================
 
