@@ -92,6 +92,7 @@
 #define IDI_CLOSE_ON_ICON    303
 #define IDI_CLOSEALL_ON_ICON 304
 #define IDI_SAVE_ON_ICON     305
+#define IDI_SAVEAS_ON_ICON     750
 #define IDI_SAVEALL_ON_ICON  306
 #define IDI_CUT_ON_ICON      307
 #define IDI_COPY_ON_ICON     308
@@ -174,6 +175,7 @@
 #define IDC_MACRO_RECORDING 1408
 
 #define IDR_SAVEALL            1500
+#define IDR_SAVEAS             1542
 #define IDR_CLOSEFILE          1501
 #define IDR_CLOSEALL           1502
 #define IDR_FIND               1503
@@ -193,6 +195,7 @@
 #define IDR_FILENEW            1517
 #define IDR_FILEOPEN           1518
 #define IDR_FILESAVE           1519
+#define IDR_FILESAVEAS         151900
 #define IDR_PRINT              1520
 #define IDR_CUT                1521
 #define IDR_COPY               1522
