@@ -317,7 +317,7 @@ void FunctionListPanel::reload()
 	}
 	removeAllEntries();
 	::SendMessage(_hSearchEdit, WM_SETTEXT, 0, reinterpret_cast<LPARAM>(TEXT("")));
-	setSort(!false);
+	setSort(true);
 
 	_foundFuncInfos.clear();
 
@@ -357,7 +357,7 @@ void FunctionListPanel::reload()
 		if (!previousParams)
 		{
 			::SendMessage(_hSearchEdit, WM_SETTEXT, 0, reinterpret_cast<LPARAM>(TEXT("")));
-			setSort(!false);
+			setSort(true);
 			_treeView.expand(root);
 		}
 		else
