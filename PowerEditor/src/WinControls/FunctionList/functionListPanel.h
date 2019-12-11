@@ -55,8 +55,8 @@ root
 |    |---leaf
 |
 |---node
-     |
-     |---leaf
+	 |
+	 |---leaf
 
 2. each rule associates with file kind. For example, c_def (for *.c), cpp_def (for *.cpp) cpp_header (for *h) java_def (for *.java)...etc.
 
@@ -68,10 +68,10 @@ struct SearchParameters {
 	generic_string _text2Find;
 	bool _doSort;
 
-	SearchParameters(): _text2Find(TEXT("")), _doSort(false){
+	SearchParameters() : _text2Find(TEXT("")), _doSort(false) {
 	};
 
-	bool hasParams()const{
+	bool hasParams()const {
 		return (_text2Find != TEXT("") || _doSort);
 	};
 };
@@ -83,28 +83,28 @@ struct TreeParams {
 
 class FunctionListPanel : public DockingDlgInterface {
 public:
-	FunctionListPanel(): DockingDlgInterface(IDD_FUNCLIST_PANEL), _ppEditView(NULL), _pTreeView(&_treeView),
-	_reloadTipStr(TEXT("Reload")), _sortTipStr(TEXT("Sort")) {};
+	FunctionListPanel() : DockingDlgInterface(IDD_FUNCLIST_PANEL), _ppEditView(NULL), _pTreeView(&_treeView),
+		_reloadTipStr(TEXT("Reload")), _sortTipStr(TEXT("Sort")), _expandTipStr(TEXT("Toggle Expand/Collapse for selected")), _expandAllTipStr(TEXT("Toggle Expand/Collapse All")) {};
 
 	void init(HINSTANCE hInst, HWND hPere, ScintillaEditView **ppEditView);
 
-    virtual void display(bool toShow = true) const {
-        DockingDlgInterface::display(toShow);
-    };
+	virtual void display(bool toShow = true) const {
+		DockingDlgInterface::display(toShow);
+	};
 
 	virtual void setBackgroundColor(COLORREF bgColour) {
 		TreeView_SetBkColor(_treeView.getHSelf(), bgColour);
 		TreeView_SetBkColor(_treeViewSearchResult.getHSelf(), bgColour);
-    };
+	};
 	virtual void setForegroundColor(COLORREF fgColour) {
 		TreeView_SetTextColor(_treeView.getHSelf(), fgColour);
 		TreeView_SetTextColor(_treeViewSearchResult.getHSelf(), fgColour);
-    };
+	};
 
-    void setParent(HWND parent2set){
-        _hParent = parent2set;
-    };
-	
+	void setParent(HWND parent2set) {
+		_hParent = parent2set;
+	};
+
 	// functionalities
 	void sortOrUnsort();
 	void reload();
@@ -131,6 +131,9 @@ private:
 
 	generic_string _sortTipStr;
 	generic_string _reloadTipStr;
+	generic_string _expandAllTipStr;
+	generic_string _expandTipStr;
+
 
 	std::vector<foundInfo> _foundFuncInfos;
 
@@ -150,4 +153,3 @@ private:
 	void setSort(bool isEnabled);
 	void findMarkEntry(HTREEITEM htItem, LONG line);
 };
-

@@ -519,6 +519,14 @@ void FunctionListPanel::notified(LPNMHDR notification)
 		{
 			wcscpy_s(lpttt->szText, _reloadTipStr.c_str());
 		}
+		else if (notification->idFrom == IDC_EXPANDALLBUTTON_FUNCLIST)
+		{
+			wcscpy_s(lpttt->szText, _expandAllTipStr.c_str());
+		}
+		else if (notification->idFrom == IDC_EXPANDBUTTON_FUNCLIST)
+		{
+			wcscpy_s(lpttt->szText, _expandTipStr.c_str());
+		}
 	}
 	else if (notification->hwndFrom == _treeView.getHSelf() || notification->hwndFrom == this->_treeViewSearchResult.getHSelf())
 	{
@@ -705,7 +713,7 @@ INT_PTR CALLBACK FunctionListPanel::run_dlgProc(UINT message, WPARAM wParam, LPA
 			0, 0, 0, 0, _hSelf, nullptr, _hInst, NULL);
 
 		oldFunclstToolbarProc = reinterpret_cast<WNDPROC>(::SetWindowLongPtr(_hToolbarMenu, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(funclstToolbarProc)));
-		TBBUTTON tbButtons[3];
+		TBBUTTON tbButtons[5];
 
 		// Add the bmap image into toolbar's imagelist
 		TBADDBITMAP addbmp = { _hInst, 0 };
@@ -713,7 +721,10 @@ INT_PTR CALLBACK FunctionListPanel::run_dlgProc(UINT message, WPARAM wParam, LPA
 		::SendMessage(_hToolbarMenu, TB_ADDBITMAP, 1, reinterpret_cast<LPARAM>(&addbmp));
 		addbmp.nID = IDI_FUNCLIST_RELOADBUTTON;
 		::SendMessage(_hToolbarMenu, TB_ADDBITMAP, 1, reinterpret_cast<LPARAM>(&addbmp));
-
+		addbmp.nID = IDI_FUNCLIST_EXPANDBUTTON;
+		::SendMessage(_hToolbarMenu, TB_ADDBITMAP, 1, reinterpret_cast<LPARAM>(&addbmp));
+		addbmp.nID = IDI_FUNCLIST_EXPANDALLBUTTON;
+		::SendMessage(_hToolbarMenu, TB_ADDBITMAP, 1, reinterpret_cast<LPARAM>(&addbmp));
 		// Place holder of search text field
 		tbButtons[0].idCommand = 0;
 		tbButtons[0].iBitmap = editWidthSep;
@@ -733,6 +744,17 @@ INT_PTR CALLBACK FunctionListPanel::run_dlgProc(UINT message, WPARAM wParam, LPA
 		tbButtons[2].fsStyle = BTNS_BUTTON | BTNS_AUTOSIZE;
 		tbButtons[2].iString = reinterpret_cast<INT_PTR>(TEXT(""));
 
+		tbButtons[3].idCommand = IDC_EXPANDBUTTON_FUNCLIST;
+		tbButtons[3].iBitmap = 2;
+		tbButtons[3].fsState = TBSTATE_ENABLED;
+		tbButtons[3].fsStyle = BTNS_BUTTON | BTNS_AUTOSIZE;
+		tbButtons[3].iString = reinterpret_cast<INT_PTR>(TEXT(""));
+
+		tbButtons[4].idCommand = IDC_EXPANDALLBUTTON_FUNCLIST;
+		tbButtons[4].iBitmap = 3;
+		tbButtons[4].fsState = TBSTATE_ENABLED;
+		tbButtons[4].fsStyle = BTNS_BUTTON | BTNS_AUTOSIZE;
+		tbButtons[4].iString = reinterpret_cast<INT_PTR>(TEXT(""));
 		::SendMessage(_hToolbarMenu, TB_BUTTONSTRUCTSIZE, sizeof(TBBUTTON), 0);
 		::SendMessage(_hToolbarMenu, TB_SETBUTTONSIZE, 0, MAKELONG(16, 16));
 		::SendMessage(_hToolbarMenu, TB_ADDBUTTONS, sizeof(tbButtons) / sizeof(TBBUTTON), reinterpret_cast<LPARAM>(&tbButtons));
@@ -796,6 +818,22 @@ INT_PTR CALLBACK FunctionListPanel::run_dlgProc(UINT message, WPARAM wParam, LPA
 		case IDC_RELOADBUTTON_FUNCLIST:
 		{
 			reload();
+		}
+		return TRUE;
+		case IDC_EXPANDALLBUTTON_FUNCLIST:
+		{
+			const TreeView & treeView = _treeView;
+
+			HTREEITEM hItem = treeView.getRoot();
+			treeView.toggleExpandCollapse(hItem);
+		}
+		return TRUE;
+		case IDC_EXPANDBUTTON_FUNCLIST:
+		{
+			const TreeView & treeView = _treeView;
+
+			HTREEITEM hItem = treeView.getSelection();
+			treeView.toggleExpandCollapse(hItem);
 		}
 		return TRUE;
 		}
