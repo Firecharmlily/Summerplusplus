@@ -824,8 +824,15 @@ INT_PTR CALLBACK FunctionListPanel::run_dlgProc(UINT message, WPARAM wParam, LPA
 		{
 			const TreeView & treeView = _treeView;
 
-			HTREEITEM hItem = treeView.getRoot();
-			treeView.toggleExpandCollapse(hItem);
+			HTREEITEM root = treeView.getRoot();
+			HTREEITEM next = treeView.getChildFrom(root);
+			//HTREEITEM next = treeView.getNextSibling(child);
+			
+			treeView.toggleExpandCollapse(root);
+			for (; next != NULL; next = _treeView.getNextSibling(next))
+				treeView.expand(next);
+
+
 		}
 		return TRUE;
 		case IDC_EXPANDBUTTON_FUNCLIST:
